@@ -72,9 +72,29 @@ body {
   margin-bottom: 8rem; }
 
 .sidebar {
+  display: flex;
+  justify-content: center;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1 / -1;
   background-color: #c69963; }
+
+.nav-btn {
+  border: none;
+  border-radius: none;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+  background-color: #fff; }
+  .nav-btn::before, .nav-btn::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 4.5rem;
+    background-color: #fff; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem); }
+  .nav-btn::after {
+    transform: translateY(1.3rem); }
 
 .header {
   grid-column: full-start / col-end 6;
